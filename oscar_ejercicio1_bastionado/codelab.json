@@ -1,0 +1,28 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-11-15T12:26:29+01:00",
+  "id": "oscar_ejercicio1_bastionado",
+  "duration": 10,
+  "title": "Protección y segurización de BIOS/UEFI en un portátil MEDION",
+  "summary": "Ejercicio 1 Bastionado en portatil",
+  "source": "ejercicio1.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "security",
+    "hardening",
+    "bios",
+    "uefi",
+    "medion"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "https://github.com/R3sjer/bastionado/issues",
+  "url": "oscar_ejercicio1_bastionado"
+}

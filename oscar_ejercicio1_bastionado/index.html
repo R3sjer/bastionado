@@ -1,0 +1,56 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Protección y segurización de BIOS/UEFI en un portátil MEDION</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="oscar_ejercicio1_bastionado"
+                  title="Protección y segurización de BIOS/UEFI en un portátil MEDION"
+                  environment="web"
+                  feedback-link="https://github.com/R3sjer/bastionado/issues">
+    
+      <google-codelab-step label="UEFI EN UN PORTATIL MEDION" duration="10">
+        <p class="image-container"><img alt="Descripción de la imagen" src="img\\56603480b19e8c18.jpeg">  </p>
+<h2 is-upgraded>- Entrar en UEFI </h2>
+<p>Para poder entrar en UEFI, deberemos apagar el equipo. Una vez apagado lo arrancaremos y pulsaremos la tecla F2 (reiteradas veces para asegurar...) Y nos saldrá un menu principal con información característica de nuestro portatil.  Aqui existen varias cosas para securizar de la mejor manera posible nuestro portátil:  </p>
+<ul>
+<li><strong>Contraseña para entrar en UEFI (HIPERVISOR Y USUARIO)</strong></li>
+<li><strong>Habilitar modo seguro</strong></li>
+<li><strong>Contraseña en el BOOT  </strong>  <h2 is-upgraded>Contraseña UEFI </h2>
+  <img alt="Descripción de la imagen" src="img\\fb091fed610e75d1.jpeg">  Por defecto, la UEFI no trae contraseña para protegerla por ende es muy fácil que cualquier usuario entre y pueda tocar alguna configuración que podría peligrar nuestros datos...Así que le añadiremos una contraseña. A continuación explicaré las diferencias entre Supervisor y User     <h2 is-upgraded>Contraseña Supervisor </h2>
+  <img alt="Descripción de la imagen" src="img\\264be4698c83d687.jpeg"> Esta contraseña protege todo lo relacionado con la UEFI, configuración avanzada, Arranque del sistema, seguridad, entrada al cualquier menu... Es la &#34;<em>contraseña Maestra</em>&#34; de nuestra UEFI. Al crear una contraseña de Supervisor, habilitará la creación de <strong><em>Contraseña de usuario   </em></strong>  <h2 is-upgraded>Contraseña Usuario </h2>
+  <img alt="Descripción de la imagen" src="img\\376d2ac841f770a4.jpeg">  User password, es una contraseña para entrar en la bios, como usuario normal la cual ofrece datos del sistema sin poder cambiar configuraciones avanzadas pero <strong>sí</strong> cambiar el sistema de arranque.  <img alt="Descripción de la imagen" src="img\\56603480b19e8c18.jpeg"><em>Menu de un usuario normal en la bios  </em>  <h2 is-upgraded>Secure Boot </h2>
+   El arranque seguro, es un modo para UEFI que trae Windows desde Windows 8, y que impide la ejecución de cualquier <strong>software no firmado o certificado en el arranque del sistema</strong>.  <img alt="Descripción de la imagen" src="img\\a6be2bc55e95eeb4.jpeg">  Solo existen dos puntos, <strong>Habilitarlo</strong> y <strong>configuraciones sobre los certificados permitidos</strong> (No sé utiliza normalmente...).  Y ya estaría protegido nuestro portátil  </li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
