@@ -27,12 +27,52 @@
                   environment="web"
                   feedback-link="https://github.com/R3sjer/bastionado/issues">
     
-      <google-codelab-step label="- Entrar en UEFI" duration="10">
-        <ul>
+      <google-codelab-step label="- Entrar en UEFI" duration="2">
+        <p>Para poder entrar en UEFI, deberemos apagar el equipo. Una vez apagado lo arrancaremos y pulsaremos la tecla F2 (reiteradas veces para asegurar...) Y nos saldrá un menu principal con información característica de nuestro portatil.</p>
+<p>Aqui existen varias cosas para securizar de la mejor manera posible nuestro portátil:</p>
+<ul>
 <li><strong>Contraseña para entrar en UEFI (HIPERVISOR Y USUARIO)</strong></li>
 <li><strong>Habilitar modo seguro</strong></li>
-<li><strong>Contraseña en el BOOT  </strong>  - Contraseña UEFI   <img alt="Descripción de la imagen" src="img\\c7c2e4c48af8f53.jpeg">  Por defecto, la UEFI no trae contraseña para protegerla por ende es muy fácil que cualquier usuario entre y pueda tocar alguna configuración que podría peligrar nuestros datos...Así que le añadiremos una contraseña. A continuación explicaré las diferencias entre Supervisor y User     - Contraseña Supervisor   <img alt="Descripción de la imagen" src="img\\b19cd058f0ef7cb1.jpeg"> Esta contraseña protege todo lo relacionado con la UEFI, configuración avanzada, Arranque del sistema, seguridad, entrada al cualquier menu... Es la &#34;<em>contraseña Maestra</em>&#34; de nuestra UEFI. Al crear una contraseña de Supervisor, habilitará la creación de <strong><em>Contraseña de usuario   </em></strong>  - Contraseña Usuario   <img alt="Descripción de la imagen" src="img\\376d2ac841f770a4.jpeg">  User password, es una contraseña para entrar en la bios, como usuario normal la cual ofrece datos del sistema sin poder cambiar configuraciones avanzadas pero <strong>sí</strong> cambiar el sistema de arranque.  <img alt="Descripción de la imagen" src="img\\9e270223e7b54745.jpeg"><em>Menu de un usuario normal en la bios  </em>  - Secure Boot   <strong>software no firmado o certificado en el arranque del sistema</strong>.  <img alt="Descripción de la imagen" src="img\\a6be2bc55e95eeb4.jpeg">  Solo existen dos puntos, <strong>Habilitarlo</strong> y <strong>configuraciones sobre los certificados permitidos</strong> (No sé utiliza normalmente...).  Y ya estaría protegido nuestro portátil  </li>
+<li><strong>Contraseña en el BOOT</strong></li>
 </ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="- Contraseña UEFI" duration="3">
+        <p class="image-container"><img alt="Descripción de la imagen" src="img\c7c2e4c48af8f53.jpeg"></p>
+<p>Por defecto, la UEFI no trae contraseña para protegerla por ende es muy fácil que cualquier usuario entre y pueda tocar alguna configuración que podría peligrar nuestros datos...Así que le añadiremos una contraseña.<br>A continuación explicaré las diferencias entre Supervisor y User</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="- Contraseña Supervisor" duration="5">
+        <p><img alt="Descripción de la imagen" src="img\b19cd058f0ef7cb1.jpeg"><br>Esta contraseña protege todo lo relacionado con la UEFI, configuración avanzada, Arranque del sistema, seguridad, entrada al cualquier menu... Es la &#34;<em>contraseña Maestra</em>&#34; de nuestra UEFI.<br>Al crear una contraseña de Supervisor, habilitará la creación de <em>Contraseña de usuario</em></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="- Contraseña Usuario" duration="3">
+        <p class="image-container"><img alt="Descripción de la imagen" src="img\376d2ac841f770a4.jpeg"></p>
+<p>User password, es una contraseña para entrar en la bios, como usuario normal la cual ofrece datos del sistema sin poder cambiar configuraciones avanzadas pero <strong>sí</strong> cambiar el sistema de arranque.</p>
+<p><img alt="Descripción de la imagen" src="img\9e270223e7b54745.jpeg"><em>Menu de un usuario normal en la bios</em></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="- Secure Boot" duration="2">
+        <p>El arranque seguro, es un modo para UEFI que trae Windows desde Windows 8, y que impide la ejecución de cualquier <strong>software no firmado o certificado en el arranque del sistema</strong>.</p>
+<p class="image-container"><img alt="Descripción de la imagen" src="img\a6be2bc55e95eeb4.jpeg"></p>
+<p>Solo existen dos puntos, <strong>Habilitarlo</strong> y <strong>configuraciones sobre los certificados permitidos</strong> (No sé utiliza normalmente...).</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="- Proteción desde arranque booteable (CD, USB)" duration="2">
+        <p>Cuando arranque el sistema, se le puede decir desde que dispositivo quiere arrancar...Disco duro, pendrive, CD. Por ello para que no se arranque desde un dispositivo que no queremos,  <strong>se necesita añadirle seguridad</strong>.</p>
+<p class="image-container"><img alt="Descripción de la imagen" src="img\a9bac777b0a9ca38.jpeg"></p>
+<p>Desde nuestro portátil no se puede editar quien usa el menu de arranque, <strong>pero se le puede añadir una contraseña y así no entran usuarios no deseados</strong>, tambien se configurará el arranque para que por defecto y el <strong>primero esté el arranque que deseamos</strong>.</p>
+<p>Y ya nuestro portatil estaria con toda la seguridad disponible</p>
 
 
       </google-codelab-step>
@@ -43,7 +83,6 @@
   <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
   <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
   <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
-  <script src="//support.google.com/inapp/api.js"></script>
 
 </body>
 </html>
